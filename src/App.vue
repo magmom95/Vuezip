@@ -1,12 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <div>
-    <h4 :style="test">1 번째 상품</h4>
+    <h4 :style="test">{{product[0]}}</h4>
     <p>{{price[0]}}</p>
   </div>
   <div>
-      <h4>2 번째 상품</h4>
+      <h4>{{product[1]}}</h4>
       <p>{{price[1]}}</p>
+  </div>
+  <div>
+      <h4>{{product[2]}}</h4>
+      <p>{{price[2]}}</p>
   </div>
 </template>
 
@@ -16,7 +20,8 @@ export default {
   name: 'App',
   data(){
     return{
-      price : ['15000','2324'],
+      price : ['15000','2324','1234'],
+      product : ['1번째 상품', '2번째 상품', '3번째 상품'], 
       test : 'color:red'
     }
   },
