@@ -6,6 +6,9 @@
   <div v-for="(a,i) in product" :key="i">
     <h4>{{product[i]}}</h4>
     <p>{{price[i]}}</p>
+    <button @click="increase()">허위 매물신고</button>
+    <br>
+    <span>신고수 : {{신고수}}</span>
   </div>
 </template>
 
@@ -17,12 +20,15 @@ export default {
     return{
       price : ['15000','2324','1234'],
       product : ['1번째 상품', '2번째 상품', '3번째 상품'],
-      bar : ['Home','Menu','Mypage']
+      bar : ['Home','Menu','Mypage'],
+      신고수 : 0
     }
   },
-  components: {
-
-  }
+    methods : {
+      increase(){
+        this.신고수 +=1
+      }
+    },
 }
 </script>
 
