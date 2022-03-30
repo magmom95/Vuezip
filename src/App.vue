@@ -1,16 +1,11 @@
 <template>
+  <div class="menu">
+    <a v-for="(test,i) in bar" :key="i">{{test}}</a>  
+  </div>
   <img alt="Vue logo" src="./assets/logo.png">
-  <div>
-    <h4 :style="test">{{product[0]}}</h4>
-    <p>{{price[0]}}</p>
-  </div>
-  <div>
-      <h4>{{product[1]}}</h4>
-      <p>{{price[1]}}</p>
-  </div>
-  <div>
-      <h4>{{product[2]}}</h4>
-      <p>{{price[2]}}</p>
+  <div v-for="(a,i) in product" :key="i">
+    <h4>{{product[i]}}</h4>
+    <p>{{price[i]}}</p>
   </div>
 </template>
 
@@ -21,8 +16,8 @@ export default {
   data(){
     return{
       price : ['15000','2324','1234'],
-      product : ['1번째 상품', '2번째 상품', '3번째 상품'], 
-      test : 'color:red'
+      product : ['1번째 상품', '2번째 상품', '3번째 상품'],
+      bar : ['Home','Menu','Mypage']
     }
   },
   components: {
@@ -39,5 +34,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.menu {
+  background : darkslateblue;
+  padding : 15px;
+  border-radius: 5px;
+}
+
+.menu a {
+  color: white;
+  padding: 10px;
 }
 </style>
