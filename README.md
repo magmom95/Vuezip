@@ -24,3 +24,35 @@
 - 속도가 빠름
 
 ---
+
+🎨 데이터 바인딩
+
+```javascript
+document.getElementById(test).innerHTML = 데이터;
+```
+
+- vue는 이럴 필요없이 데이터보관을 하고 HTML 꽂아넣음
+
+```javascript
+<script>
+export default {
+  name : 'App',
+  data(){
+    return {
+      price1 : 60
+    }
+  }
+}
+
+</script>
+```
+
+- 로 데이터를 보관하고 
+
+```javascript
+<p>{{ price1 }} 원</p>
+```
+
+- 데이터를 꽂으면 됨
+
+---
