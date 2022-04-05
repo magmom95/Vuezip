@@ -55,4 +55,32 @@ export default {
 
 - 데이터를 꽂으면 됨
 
+```javascript
+<template>
+  <div>
+    <h4 :style="스타일">XX 원룸</h4>
+    <p>XX 만원</p>
+  </div>
+  <div>
+    <h4>XX 원룸</h4>
+    <p>XX 만원</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name : 'App',
+  data(){
+    return {
+      price1 : 60,
+      스타일 : 'color:red'
+    }
+  }
+}
+
+</script>
+```
+
+- style="" id="" class="" 에도 데이터를 꽂을 수 있음
+
 ---
