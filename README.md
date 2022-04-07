@@ -24,8 +24,8 @@
 - 속도가 빠름
 
 ---
-
-🎨 데이터 바인딩
+<details markdown="1">
+<summary>🎨 데이터 바인딩</summary>
 
 ```javascript
 document.getElementById(test).innerHTML = 데이터;
@@ -82,5 +82,9 @@ export default {
 ```
 
 - style="" id="" class="" 에도 데이터를 꽂을 수 있음
+
+---
+
+</details>
 
 ---
