@@ -88,3 +88,46 @@ export default {
 </details>
 
 ---
+
+<details markdown="1">
+<summary>🧨 v-for </summary>
+
+```javascript
+<div class="menu">
+  <a v-for="test in 3" :key="test">Home</a>
+</div>
+```
+
+- 원하는 태그에 v-for="작명 in 반복할횟수" 를 적음
+ 
+- key 속성은 반복문돌릴 때 필요
+
+- 위에 코드는 a태그가 3개 생성
+
+```javascript
+<div class="menu">
+  <a v-for="test in subject" :key="test">{{ test }}</a>
+</div>
+
+data(){
+  return {
+    subject : ['Home', 'Shop', 'About']
+  }
+}
+```
+
+- subject안의 자료 갯수만큼 반복
+
+- test는 반복될 때마다 subject 안에 있던 자료들
+
+```javascript
+<div class="menu">
+  <a v-for="(test,i) in subject" :key="i"> {{ test }}</a>
+</div>
+```
+
+- i 가 증가하면서 반복됨
+
+</details>
+
+---
