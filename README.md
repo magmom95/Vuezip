@@ -128,6 +128,15 @@ data(){
 
 - i 가 증가하면서 subject 안에 내용이 반복 출력
 
+```javascript
+<div v-for="(a,i) in products" :key="i">
+  <h4>{{products[i]}}</h4>
+  <p>50만원</p>
+</div>
+```
+
+- 반복문을 돌리면서 products[i]를 상품명으로 출력
+
 </details>
 
 ---
