@@ -27,6 +27,8 @@
 <details markdown="1">
 <summary>🎨 데이터 바인딩</summary>
 
+<br>
+
 ```javascript
 document.getElementById(test).innerHTML = 데이터;
 ```
@@ -92,6 +94,8 @@ export default {
 <details markdown="1">
 <summary>🧨 v-for </summary>
 
+<br>
+
 ```javascript
 <div class="menu">
   <a v-for="test in 3" :key="test">Home</a>
@@ -136,6 +140,17 @@ data(){
 ```
 
 - 반복문을 돌리면서 products[i]를 상품명으로 출력
+
+```javascript
+<div>
+  <h4>{{products[0]}}</h4>
+  <p>50만원</p>
+  <button @click="신고수++">허위매물신고</button>
+  <span>신고수 : {신고수}</span>
+</div>
+```
+
+- @click 을 통하여 data 상승
 
 </details>
 
