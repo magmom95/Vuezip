@@ -152,6 +152,15 @@ data(){
 
 - @click 을 통하여 data 상승
 
+```javascript
+<div>
+  <h4>{{products[0]}}</h4>
+  <p>50만원</p>
+  <button @click="increase()">허위매물신고</button>
+  <span>신고수 : {신고수}</span>
+</div>
+```
+
 </details>
 
 ---
