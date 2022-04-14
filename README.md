@@ -164,3 +164,33 @@ data(){
 </details>
 
 ---
+
+<details markdown="1">
+<summary>🎃 v-if </summary>
+
+<br>
+
+```javascript
+<div class="black-bg" v-if="모달창열렸나 == true">
+  <div class="white-bg">
+    <h4>상세페이지</h4>
+    <p>상세페이지내용임</p>
+  </div>
+</div>
+```
+
+```javascript
+data(){
+  return {
+    모달창열렸나 : true,
+  }
+}
+```
+
+- @click 버튼으로 on&&off 기능 가능
+
+---
+
+</details>
+
+---
