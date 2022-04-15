@@ -189,6 +189,16 @@ data(){
 
 - @click 버튼으로 on&&off 기능 가능
 
+```javascript
+<div v-for="(a, i) in 원룸들" :key="i">
+  <img :src="a.image" class="room-img">
+  <h4 @click="모달창열렸니 = true; 누른거 = i">{{a.title}}</h4>
+  <p>{{a.price}}</p>
+</div>
+```
+
+- 이렇게 표현 가능
+
 ---
 
 </details>
