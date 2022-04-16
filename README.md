@@ -199,6 +199,28 @@ data(){
 
 - 이렇게 표현 가능
 
+```javascript
+<div v-if="1 == 2">
+  안녕하세요
+</div>
+<div v-else>
+  안녕하세요2
+</div>
+```
+
+- v-else 라는 문법도 존재
+
+```javascript
+<div v-if="1 == 2">
+  안녕하세요
+</div>
+<div v-else-if="1 == 3">
+  안녕하세요2
+</div>
+```
+
+- else if 문법도 가능
+
 ---
 
 </details>
