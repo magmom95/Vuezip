@@ -196,8 +196,7 @@ data(){
   <p>{{a.price}}</p>
 </div>
 ```
-
-- 이렇게 표현 가능
+- v-else 라는 문법 존재
 
 ```javascript
 <div v-if="1 == 2">
@@ -208,7 +207,7 @@ data(){
 </div>
 ```
 
-- v-else 라는 문법도 존재
+- else if 문법 가능
 
 ```javascript
 <div v-if="1 == 2">
@@ -218,8 +217,6 @@ data(){
   안녕하세요2
 </div>
 ```
-
-- else if 문법도 가능
 
 ---
 
