@@ -187,7 +187,7 @@ data(){
 }
 ```
 
-- @click 버튼으로 on&&off 기능 가능
+- @click 버튼으로 on&&off 구현 가능
 
 ```javascript
 <div v-for="(a, i) in 원룸들" :key="i">
@@ -215,6 +215,18 @@ data(){
 </div>
 <div v-else-if="1 == 3">
   안녕하세요2
+</div>
+```
+
+```javascript
+<div class="black-bg" v-if="모달창열렸니 == true">
+  <div class="white-bg">
+    <img :src="원룸들[누른거].image" style="width:100%">
+    <h4>{{ 원룸들[누른거].title }}</h4>
+    <p>{{ 원룸들[누른거].content }}</p>
+    <p>{{ 원룸들[누른거].price }} 원</p>
+    <button @click="모달창열렸니 = false">닫기</button>
+  </div>
 </div>
 ```
 
